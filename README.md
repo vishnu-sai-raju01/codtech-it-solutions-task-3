@@ -1,68 +1,58 @@
 Temperature Monitoring System
 
-This project is designed to continuously monitor the surrounding temperature using a sensor connected to a microcontroller. The temperature is displayed in real-time and alerts can be triggered if it exceeds a set threshold.
+A simple microcontroller-based project to monitor and display temperature in real-time using sensors like LM35 or DHT11.
 
 Features
 
-Real-time temperature monitoring
+* Real-time temperature monitoring
+* Works with LM35 or DHT11 sensor
+* Display output on serial monitor or LCD
+* Set temperature threshold for alerts
+* Easy to build and customize
 
-Displays temperature on LCD or Serial Monitor
+Components Required
 
-Customizable alert threshold
+* Arduino Uno or ESP32
+* LM35 or DHT11 temperature sensor
+* 16x2 LCD or OLED display (optional)
+* Breadboard and jumper wires
+* Resistors (if required)
+* USB cable or external power supply
 
-Low power and simple hardware
+Working Principle
 
-Can be upgraded for IoT or remote monitoring
+* Sensor measures the ambient temperature
+* Microcontroller reads and processes sensor data
+* Output is displayed on LCD or serial monitor
+* Alert can be triggered if temperature exceeds threshold
 
-Hardware Required
+ Applications
 
-Arduino Uno / ESP32 / Raspberry Pi
+* Home temperature monitoring
+* Greenhouse environment control
+* Industrial temperature tracking
+* Server room heat detection
+* Weather station projects
 
-Temperature Sensor (LM35 / DHT11 / DS18B20)
+ File Structure
 
-16x2 LCD display or use Serial Monitor
+* code/ → Arduino or ESP32 code
+* docs/ → Documentation (optional)
 
-Breadboard and jumper wires
+ How to Use
 
-USB cable or battery pack
+* Connect the temperature sensor to the microcontroller
+* Upload the code to the board using Arduino IDE
+* Open the Serial Monitor or LCD to view temperature readings
 
-Software Required
+ Sample Output
 
-Arduino IDE
+* Temperature: 29.5 °C
+* Temperature: 30.2 °C
 
-Required libraries based on sensor:
+ Future Enhancements
 
-LiquidCrystal (for LCD)
-
-DHT / OneWire + DallasTemperature (for sensor)
-
-How to Use
-
-Connect the temperature sensor to the microcontroller.
-
-Upload the code using Arduino IDE.
-
-Open Serial Monitor or view LCD to see temperature data.
-
-Set a threshold in the code to activate alerts if temperature gets too high.
-
-How It Works
-
-The sensor reads the temperature.
-
-The microcontroller processes the data.
-
-Output is displayed on screen or monitor.
-
-If the temperature is above the limit, an LED, buzzer, or message can alert the user.
-
-Future Improvements
-
-Add data logging to SD card
-
-Connect to Wi-Fi for remote access
-
-Send alerts via SMS or mobile apps
-
-Display temperature charts on cloud dashboard
-
+* Add wireless communication (Wi-Fi or Bluetooth)
+* Send data to cloud platforms (ThingSpeak, Blynk, etc.)
+* Add data logging with SD card module
+* Connect fan or buzzer for automatic cooling
